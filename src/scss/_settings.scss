@@ -1,0 +1,127 @@
+/* Css for settings*/
+
+.settings{
+    display: flex;
+
+    &__headline{
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+    }
+    
+    &__left{
+        padding: 2em 3em 0 2em;
+    }
+}
+
+.settingsMain{
+
+    &__title{
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        font-size: 3em;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-top: 0.5em;
+    }
+
+    &__subtitle{
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+    }
+
+    &__categories{
+        border-radius: 2em;
+        margin: 0 2em;
+    }
+
+    &__cat{
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5em;
+        border-bottom: 0.5px solid $ice;
+        padding: 0.5em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__cat:last-child{
+        border-bottom: none;
+    }
+
+    &__news{
+        font-size: 0.8em;
+        font-family: 'Inter', sans-serif;
+        margin: 0.5em;
+    }
+}
+
+.theme{
+    text-align: center;
+    padding: 2em 0;
+
+    &__Btn{
+        font-family: 'Inter', sans-serif;
+        width: 15em;
+        height: 5em;
+        border-radius: 3em;
+        border: solid 1px $fossil;
+    }
+}
+
+.version{
+
+    padding-bottom: 2em;
+    text-align: center;
+
+    &__text{
+        font-family: 'Inter', sans-serif;
+    }
+}
+
+// TOGGLESWITCH
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 3.75em;
+    height: 2em;
+
+    &__check{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    &__slider{
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: 0.4s;
+    }
+
+    &__slider::before{
+        position: absolute;
+        content: "";
+        height: 1.5em;
+        width: 1.5em;
+        left: 0.25em;
+        bottom: 0.25em;
+        transition: 0.4s;
+    }
+
+    &__slider_round{
+        border-radius: 1em;
+    }
+
+    &__slider_round::before{
+        border-radius: 50%;
+    }
+}
+
+.switch__check:checked + .switch__slider::before{
+    transform: translateX(1.75em);
+}

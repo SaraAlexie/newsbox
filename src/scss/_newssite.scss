@@ -1,0 +1,141 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 0.5px solid $ice;
+
+    &__headline{
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+    }
+
+    &__icon{
+        margin-top: 2em;
+    }
+}
+
+.searchbar{
+    display: flex;
+    justify-content: center;
+    border-bottom: 0.5px solid $ice;
+    padding: 1.5em 0;
+
+    &__input{
+        border-right: none;
+        width: 20em;
+        height: 3.5em;
+    }
+
+    &__btn{
+        border-left: none;
+        width: 4em;
+    }
+}
+
+/* COLLAPSIBLE*/
+
+.collapsible{
+    padding-bottom: 6em;
+
+    &__btn {
+        border: 0.5px solid $ice;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        position: relative;
+    }
+}
+  
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: $snow;
+}
+
+.fa-chevron-right{
+    position: absolute;
+    top: 40%;
+    right: 3em;
+    transform: translate(-10px -10px);
+    transition: transform 0.4s ease;
+}
+
+.rotated{
+    transform: rotate(90deg);
+}
+
+.fa-heartbeat, .fa-futbol, .fa-suitcase-rolling, .fa-globe, .fa-globe-americas, .fa-user-tie, .fa-sim-card{
+    padding-right: 1em;
+}
+
+.save-inbox{
+    color: $snow;
+    position: absolute;
+    top: 42%;
+    right: 42%;
+    font-size: 2em;
+}
+
+.newslist{
+
+    padding-left: 0;
+
+    &__item{
+        list-style: none;
+        border-bottom: 0.5px solid $ice;
+        display: flex;
+    }
+
+    &__item--swiped{
+        margin-left: -50%;
+        transition: margin-left 1s;
+    }
+
+    &__item--swipedBack{
+        transition: all 0.5s ease-out;
+    }
+
+    &__link{
+        text-decoration: none;
+    }
+
+    &__none{
+        display: none;
+    }
+
+    &__item--swiped &__none{
+        display: block;
+        background-color: $sage;
+        width: 100%;
+        position: relative;
+    }
+
+    &__news{
+        display: flex;
+    }
+
+    &__img{
+        border-radius: 50%;
+        height: 4em;
+        width: 4em;
+        margin-right: 0.5em;
+        align-self: center;
+    }
+
+    &__title{
+        font-family: 'Inter', sans-serif;
+        font-size: 1em;
+    }
+
+    &__description{
+        font-family: 'Inter', sans-serif;
+        font-size: 0.7em;
+    }
+}

@@ -1,0 +1,131 @@
+@import "../variables";
+
+html{
+    background-color: $drab;
+}
+
+.header{
+
+    background-color: $drab;
+
+    &__headline, &__icon{
+        color: $snow;
+    }
+
+    &__link:visited{
+        color: $snow;
+    }
+}
+
+.searchbar{
+
+    background-color: $drab;
+    
+    &__input{
+        background-color: $ice;
+        border: $fossil;
+    }
+
+    &__btn{
+        background-color: $ice;
+        border: $fossil;
+    }
+}
+
+.fa-search{
+    color: $fossil;
+}
+
+.collapsible{
+    background-color: $drab;
+
+    &__btn{
+        background-color: $drab;
+        color: $snow;
+    }
+}
+
+.content{
+    background-color: $drab;
+}
+
+.newslist{
+
+    background-color: $drab;
+
+    &__title{
+        color: $snow;
+    }
+
+    &__description{
+        color: $sand;
+    }
+}
+
+.settings{
+    background-color: $drab;
+
+    &__headline{
+        color: $snow;
+    }
+
+    &__left{
+        color: $snow;
+    }
+}
+
+.settingsMain{
+    background-color: $onyx;
+
+    &__title{
+        color: $ice;
+        background-color: $onyx;
+    }
+
+    &__categories{
+        background-color: $drab;
+    }
+
+    &__cat{
+        color: $snow;
+    }
+
+    &__subtitle{
+        color: $snow;
+    }
+}
+
+.switch{
+
+    &__slider{
+        background-color: $fossil;
+    }
+
+    &__slider::before{
+        background-color: $snow;
+    }
+}
+
+.switch__check:checked + .switch__slider{
+    background-color: $slate;
+}
+
+.theme{
+
+    &__Btn{
+        color: $onyx;
+    }
+}
+
+.version{
+
+    &__text{
+        color: $snow;
+    }
+}
+
+
+
+.fa-heartbeat, .fa-futbol, .fa-suitcase-rolling, .fa-globe, .fa-globe-americas, .fa-user-tie, .fa-sim-card{
+    color: $danger;
+}

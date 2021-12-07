@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="alternate stylesheet" href="/css/theme/light.css" title="light" disabled>
+    <link rel="alternate stylesheet" href="/css/theme/dark.css" title="dark" disabled>
+
+    <script src="https://kit.fontawesome.com/9ec0b1024b.js" crossorigin="anonymous"></script>
+
+    <title>Newsbox</title>
+</head>
+
+<body class="newsboxBody">
+    <header class="header">
+        <figure class="header__icon"> <a href="/archive" class="header__link"><i class="fas fa-inbox"></i></a> </figure>
+        <h1 class="header__headline">Newsbox</h1>
+        <figure class="header__icon"> <a href="/settings" class="header__link"><i class="fas fa-cog"></i></a> </figure>
+    </header>
+
+    <form action="" class="searchbar">
+        <input placeholder="Search news" type="search" name="search" id="search" class="searchbar__input">
+        <button type="submit" class="searchbar__btn"> <i class="fas fa-search"></i> </button>
+    </form>
+
+    <main class="collapsible">
+        <div class="collapsible__business collapsible__theme">
+            <button class="collapsible__btn"><i class="fas fa-user-tie"></i>BUSINESS <i class="fas fa-chevron-right"></i></button>
+            <div class="content business"></div>
+        </div>
+
+        <div class="collapsible__health collapsible__theme">
+            <button class="collapsible__btn"><i class="fas fa-heartbeat"></i>HEALTH <i class="fas fa-chevron-right"></i></button>
+            <div class="content health"></div>
+        </div>
+
+        <div class="collapsible__sports collapsible__theme">
+            <button class="collapsible__btn"><i class="far fa-futbol"></i>SPORTS <i class="fas fa-chevron-right"></i></button>
+            <div class="content sports"></div>
+        </div>
+
+        <div class="collapsible__technology collapsible__theme">
+            <button class="collapsible__btn"><i class="fas fa-sim-card"></i>TECHNOLOGY <i class="fas fa-chevron-right"></i></button>
+            <div class="content technology"></div>
+        </div>
+
+        <div class="collapsible__travel collapsible__theme">
+            <button class="collapsible__btn"><i class="fas fa-suitcase-rolling"></i>TRAVEL <i class="fas fa-chevron-right"></i></button>
+            <div class="content travel"></div>
+        </div>
+
+        <div class="collapsible__us collapsible__theme">
+            <button class="collapsible__btn"><i class="fas fa-globe-americas"></i></i>U.S. <i class="fas fa-chevron-right"></i></button>
+            <div class="content us"></div>
+        </div>
+
+        <div class="collapsible__world collapsible__theme">
+            <button class="collapsible__btn"><i class="fas fa-globe"></i></i>WORLD <i class="fas fa-chevron-right"></i></button>
+            <div class="content world"></div>
+        </div>
+
+    </main>
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
